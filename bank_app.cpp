@@ -9,7 +9,7 @@ private:
     double balance;
 
 public:
-    // Constructor with validation for initial balance for account creation at $1000.00 minimum
+    // Constructor with validation for initial balance for account creation at $1000.00 minimum 
     Account(double initialBalance) {
         if (initialBalance >= 1000.00) {
             balance = initialBalance;
