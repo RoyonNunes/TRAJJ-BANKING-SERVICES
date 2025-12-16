@@ -1,19 +1,13 @@
-# Trajj Banking Services — Updated OOP Bank Application 
-
-**This is an updated version of _OOP - Bank Application TRAJJ BANKING SERVICES_.**
+# OOP - Bank Application TRAJJ BANKING SERVICES
 
 A C++ object-oriented programming project demonstrating inheritance, polymorphism, and encapsulation through a simple banking system.
-
----
 
 ## Project Overview
 
 This repository contains two bank application implementations that showcase OOP principles:
 
-- `bank_app.cpp` — Basic bank application
-- `bank_app2.cpp` — Enhanced version with `SavingsAccount` and `ChequingAccount` classes featuring interest rates and transaction fees
-
----
+- **`bank_app.cpp`** — Basic bank application
+- **`bank_app2.cpp`** — Enhanced version with `SavingsAccount` and `ChequingAccount` classes featuring interest rates and transaction fees
 
 ## Features
 
@@ -22,44 +16,29 @@ This repository contains two bank application implementations that showcase OOP 
 - **Account** — Base class with deposit/withdrawal operations and balance management
   - Constructor validates minimum balance of $1,000.00
   - Virtual methods for polymorphic behavior
-
+  
 - **SavingsAccount** — Inherits from Account with interest rate functionality
   - Calculates interest based on current balance and rate
-  - `AddInterest` method to accrue earnings
-
+  - Add interest method to accrue earnings
+  
 - **ChequingAccount** — Inherits from Account with transaction fee management
   - Charges fees on both deposits and withdrawals
   - Overrides virtual methods to apply fee logic
 
-
 ### Account Operations
 
-- ✅ Check account balance
-- ✅ Deposit money
-- ✅ Withdraw money
-- ✅ View detailed account information
-- ✅ Calculate and apply interest (Savings Account only)
-- ✅ Track transaction fees (Chequing Account only)
-
-### Updated / Additional Features
-
-- **Transaction Logging:** Each account keeps a detailed transaction log (amount, type, timestamp, account) for every operation including balance inquiries and failed attempts.
-- **Reports:** Console transaction reports that list account number, type, current balance and full transaction history with timestamps.
-- **Save Reports to File:** Saveable reports (defaults to `transactions.txt`, and the app saves `final_savings_report.txt` and `final_chequing_report.txt` on exit).
-- **Auto-generated Account Numbers:** Accounts are assigned unique IDs (e.g., `ACC1000`) when created.
-- **Robust Validation & Error Handling:** Minimum initial balance enforced ($1,000.00), input validation for numeric values, and clear error messages for failed operations; failed transactions are logged.
-- **Menu-driven CLI:** Switch between Savings and Chequing accounts, perform account-specific actions, and navigate a simple text menu interface.
-- **File I/O Feedback:** The program confirms when reports are successfully written to disk and handles file errors gracefully.
-
----
+- ✓ Check account balance
+- ✓ Deposit money
+- ✓ Withdraw money
+- ✓ View detailed account information
+- ✓ Calculate and apply interest (Savings Account only)
+- ✓ Track transaction fees (Chequing Account only)
 
 ## Prerequisites
 
-- **C++ Compiler:** GCC/G++ (via MSYS2 recommended for Windows)
-- **Platform:** Windows (PowerShell)
-- **IDE:** Visual Studio Code (optional, with C/C++ extension)
-
----
+- **C++ Compiler**: GCC/G++ (via MSYS2 recommended for Windows)
+- **Platform**: Windows (PowerShell)
+- **IDE**: Visual Studio Code (optional, with C/C++ extension)
 
 ## Build Instructions
 
@@ -70,20 +49,15 @@ This repository contains two bank application implementations that showcase OOP 
 3. Select **C/C++: gcc.exe build active file**
 4. Executable will be created in the same directory as the source file
 
-
----
-
 ## Usage Example
 
 ### Initial Setup
-
 1. Start the program
 2. Enter an initial balance (minimum $1,000.00)
 3. Set Savings Account interest rate (e.g., 2.5%)
 4. Set Chequing Account transaction fee (e.g., $2.50)
 
 ### Using Savings Account
-
 - Check balance
 - Deposit money (no fees)
 - Withdraw money (no fees)
@@ -91,16 +65,12 @@ This repository contains two bank application implementations that showcase OOP 
 - View account details including interest earnable
 
 ### Using Chequing Account
-
 - Check balance
 - Deposit money (transaction fee applied)
 - Withdraw money (transaction fee applied)
 - View account details including transaction fee per operation
 
----
-
-## Example Session
-
+### Example Session
 ```
 Welcome to Trajj Banking Services
 Please Enter Initial Account Balance (minimum $1000.00): $5000
@@ -112,9 +82,7 @@ Enter Transaction Fee for Chequing Account: $2.50
 2. Use Chequing Account
 3. Exit
 
-**Happy Banking!** 🏦
-```
 
----
+**Happy Banking!** 🏦
 
 For questions or issues, feel free to open an issue in the repository.
